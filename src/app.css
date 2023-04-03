@@ -1,3 +1,13 @@
 .App {
-    color: red;
+    background-color: red;
+}
+
+h1 {
+    color: blue;
+    background-color: red;
+}
+
+.trial {
+    font-size: 20px;
+    background-color: red;
 }
