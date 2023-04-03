@@ -1,13 +1,19 @@
 .App {
-    background-color: red;
+
 }
 
-h1 {
-    color: blue;
-    background-color: red;
+.header {
+    background-color: lightblue;
 }
 
-.trial {
-    font-size: 20px;
-    background-color: red;
+.container {
+    background-color: lightgrey;
+}
+
+.list {
+    background-color: lightgreen;
+}
+
+.createList {
+    background-color: lightseagreen;
 }
