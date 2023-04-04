@@ -1,25 +1,41 @@
 import {
   BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
 } from 'react-router-dom';
 import styles from './App.css';
-import List from './Components/List.js';
+import ListPage from './Components/ListPage';
 import CreateEvent from './Components/CreateEvent';
+import AboutMe from './Components/AboutMe';
   
 export default function App() {
   return(
-    <div className="App">
-      <div className={styles.header}>
-        <h1>This is the Header Page</h1>
-        <p>About the creator</p>
-        <p>About Me</p>
-        <CreateEvent />
-      </div>
-      <Router>
-        <h1>This is the home page</h1>
-        <div className={styles.container}>
-          <List />
+    <Router>
+
+      <div className="App">
+        <div className={styles.header}>
+          <Link to ="/">
+            <h1>Portland Networking Event Tracker</h1>
+          </Link>
+          <Link to="/AboutMe">
+            <h5>About Me</h5>
+          </Link>
+          <Link to="CreateEvent">
+            <h5>Create Event</h5>
+          </Link>
         </div>
-      </Router>
-    </div>
+        <div className={styles.routes}>
+          <Routes>
+            <Route path="/"
+              element={<ListPage />} />
+            <Route path="/AboutMe" 
+              element={<AboutMe />}/>
+            <Route path="/CreateEvent"
+              element={<CreateEvent />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
