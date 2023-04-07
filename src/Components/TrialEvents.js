@@ -1,0 +1,23 @@
+export const TrialEvents = [
+  { id: '1',
+    event: 'Event One',
+    host: 'Host One',
+    location: 'Location One',
+    time: '9:00am',
+    date: '04/01/2023',
+  },
+  { id: '2',
+    event: 'Event Two',
+    host: 'Host Two',
+    location: 'Location Two',
+    time: '10:00am',
+    date: '04/02/2023',
+  },
+  { id: '3',
+    event: 'Event Three',
+    host: 'Host Three',
+    location: 'Location Three',
+    time: '11:00am',
+    date: '04/03/2023',
+  }
+];
