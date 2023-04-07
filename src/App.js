@@ -14,9 +14,7 @@ export default function App() {
 
       <div className="App">
         <div className={styles.header}>
-          <Link to ="/">
-            <h1>Portland Networking Event Tracker</h1>
-          </Link>
+          <h1>Portland Networking Event Tracker</h1>
           <Link to="/AboutMe">
             <h5>About Me</h5>
           </Link>
