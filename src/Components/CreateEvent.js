@@ -1,6 +1,5 @@
 import styles from '../App.css';
-import { useEffect, useState } from 'react';
-import { TrialEvents } from './TrialEvents';
+import { useState } from 'react';
 
 export default function CreateEvent() {
   const [userItem, setUserItem] = useState('');
@@ -11,17 +10,13 @@ export default function CreateEvent() {
     setList([...list, userItem]);
   }
 
-  // Note: Perhaps its best to make a map function to loop through Trial Events
-  console.log(TrialEvents[1], 'line 14');
-  console.log(typeof TrialEvents[1]);
-
   return (
     <div className={styles.createEvent}>
       <p>This is the event creation page</p>
       <div className={styles.list}>
         {list}
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}> 
         <input value={userItem}
           placeholder="Event Name"
           onChange={e => {setUserItem(e.target.value);}}/>
@@ -31,5 +26,4 @@ export default function CreateEvent() {
   );
 }
 
-// To Do: 
-// How to push useState values to reflect Trial Events?
+// NOTE: Create Event needs to add to backend. 
