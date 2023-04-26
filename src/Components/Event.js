@@ -1,6 +1,8 @@
+import styles from '../App.css';
+
 export default function Event({ event, host, location, date, time }) {
   return (
-    <div>
+    <div className={styles.event}>
       <h3>{event}</h3>
       <p>{host}</p>
       <p>{location}</p>

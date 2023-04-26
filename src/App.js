@@ -13,7 +13,6 @@ import { TrialEvents } from '../src/Components/TrialEvents';
 export default function App() {
   return(
     <Router>
-
       <div className="App">
         <div className={styles.header}>
           <h1>Portland Networking Event Tracker</h1>
@@ -43,5 +42,3 @@ export default function App() {
     </Router>
   );
 }
-
-// UPDATE YOUR GITHUB AUTH TOKEN
