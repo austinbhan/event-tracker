@@ -4,15 +4,16 @@ import {
   Route,
   // Link
 } from 'react-router-dom';
-import { useEffect } from 'react';
 import styles from './App.css';
 import CreateEvent from './Components/CreateEvent';
 import AboutMe from './Components/AboutMe';
 import EventList from './Components/EventList';
 import { TrialEvents } from '../src/Components/TrialEvents';
-import getAll from './fetch-utils/getAll';
+import { getAll } from './fetch-utils/getAll';
   
 export default function App() {
+
+  console.log(getAll());
 
   return (
 

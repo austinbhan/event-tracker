@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase.js'; // WORK FROM HERE
+import { createClient } from '@supabase/supabase-js';
 export const client = createClient(
   process.env.REACT_APP_SUPABASE_URL,
   process.env.REACT_APP_SUPABASE_KEY
@@ -13,7 +13,7 @@ export function checkError({ data, error }) {
 
 export async function getAll() {
   const response = await client
-    .from('Events')
+    .from('events')
     .select('*');
 
   return response.body;
