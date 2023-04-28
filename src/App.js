@@ -9,12 +9,8 @@ import CreateEvent from './Components/CreateEvent';
 import AboutMe from './Components/AboutMe';
 import EventList from './Components/EventList';
 import { TrialEvents } from '../src/Components/TrialEvents';
-import { getAll } from './fetch-utils/getAll';
   
 export default function App() {
-
-  console.log(getAll());
-
   return (
 
     <Router>

@@ -11,10 +11,3 @@ export function checkError({ data, error }) {
   return data;
 }
 
-export async function getAll() {
-  const response = await client
-    .from('events')
-    .select('*');
-
-  return response.body;
-}
