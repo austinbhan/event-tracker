@@ -1,16 +1,9 @@
 import Event from '../Components/Event';
 import { getEvents } from '../fetch-utils/fetch-utils';
-import { useState, useEffect } from 'react';
 
 export default function EventList({ TrialEvents }) {
 
-  const [events, fetchEvents] = useState([]);
-
-  useEffect(() => {
-    fetchEvents(getEvents);
-  }, []);
-
-  console.log(events);
+  console.log(getEvents());
 
   return (
     <div>

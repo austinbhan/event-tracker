@@ -1,9 +1,10 @@
-import { client } from './client';
-// When getting a single event, invoke checkError 
+import { client, checkError } from './client';
+
 
 export async function getEvents() {
-  const response = await client.from('events').select('*');
-  console.log(client); // returns client information
-  console.log(response); // returns 401 server error
-  return response.data;
+  const response = await client.from('events')
+    .select('*')
+    .order('id', { ascending: false });
+  console.log('fetch-utils 8', response);
+  return checkError(response);
 }
