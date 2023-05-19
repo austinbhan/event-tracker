@@ -1,9 +1,12 @@
 import Event from '../Components/Event';
+import { useEffect } from 'react';
 import { getEvents } from '../fetch-utils/fetch-utils';
 
 export default function EventList({ TrialEvents }) {
 
-  console.log(getEvents());
+  useEffect(() => {
+    getEvents();
+  }, []);
 
   return (
     <div>
